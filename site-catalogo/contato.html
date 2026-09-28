@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Empresa | Contacto</title>
+    <meta name="description" content="Fale connosco pelo WhatsApp, telefone ou email. Veja a nossa localização e horário de atendimento.">
+    <meta name="theme-color" content="#0A5548">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Página inicial">
+                <img src="images/logo.png" alt="" width="40" height="40">
+                <span data-config="nomeEmpresa">Minha Empresa</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="contato.html" aria-current="page">Contacto</a></li>
+                </ul>
+                <a class="btn btn-primary btn-sm" href="catalogo.html">Ver Catálogo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="page-header" aria-labelledby="contacto-titulo">
+            <div class="container">
+                <span class="eyebrow">Contacto</span>
+                <h1 id="contacto-titulo">Fale connosco</h1>
+                <p>Estamos disponíveis para responder às suas perguntas e pedidos.</p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 24px;" aria-label="Informações de contacto">
+            <div class="container contact-grid">
+                <!-- Informações -->
+                <div>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <span class="feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+                            </span>
+                            <div>
+                                <h2>WhatsApp</h2>
+                                <a href="#" data-whatsapp><span data-config="telefone">+244 900 000 000</span></a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+                            </span>
+                            <div>
+                                <h2>Telefone</h2>
+                                <a href="#" data-tel><span data-config="telefone">+244 900 000 000</span></a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </span>
+                            <div>
+                                <h2>Email</h2>
+                                <a href="#" data-email><span data-config="email">email@empresa.com</span></a>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                            </span>
+                            <div>
+                                <h2>Localização</h2>
+                                <p data-config="localizacao">Rua Exemplo, n.º 123, Luanda, Angola</p>
+                            </div>
+                        </li>
+                        <li class="contact-item">
+                            <span class="feature-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>
+                            </span>
+                            <div>
+                                <h2>Horário de atendimento</h2>
+                                <p data-config="horario">Seg. a Sex.: 08h00 – 18h00 · Sáb.: 09h00 – 13h00</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-whatsapp btn-block" href="#" data-whatsapp>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24z"/></svg>
+                        Falar no WhatsApp
+                    </a>
+                </div>
+
+                <!-- Formulário (sem backend: abre o WhatsApp com a mensagem) -->
+                <div class="form-card">
+                    <h2>Envie-nos uma mensagem</h2>
+                    <p>Preencha o formulário e continue a conversa no WhatsApp.</p>
+
+                    <form id="form-contacto" novalidate>
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" autocomplete="name" required aria-describedby="erro-nome">
+                            <span class="form-error" id="erro-nome" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="erro-email">
+                            <span class="form-error" id="erro-email" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" required aria-describedby="erro-mensagem"></textarea>
+                            <span class="form-error" id="erro-mensagem" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                        <p class="form-note">Ao enviar, o WhatsApp será aberto com a sua mensagem já escrita.</p>
+                        <p class="form-success" id="form-sucesso" role="status" hidden>Obrigado! A sua mensagem foi preparada no WhatsApp.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="brand" href="index.html">
+                    <img src="images/logo.png" alt="" width="40" height="40">
+                    <span data-config="nomeEmpresa">Minha Empresa</span>
+                </a>
+                <p>Produtos e serviços de qualidade, com atendimento próximo e pedidos simples.</p>
+            </div>
+            <nav aria-label="Links rápidos">
+                <h2>Links rápidos</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="catalogo.html?categoria=Promoções">Promoções</a></li>
+                    <li><a href="contato.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Contactos</h2>
+                <ul>
+                    <li><a href="contato.html" data-whatsapp>WhatsApp</a></li>
+                    <li><a href="contato.html" data-tel><span data-config="telefone">+244 900 000 000</span></a></li>
+                    <li><a href="contato.html" data-email><span data-config="email">email@empresa.com</span></a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Redes sociais</h2>
+                <ul class="social-list">
+                    <li><a href="#" data-social="facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.3C16.7 2.2 15.7 2 14.6 2 12.2 2 10.6 3.5 10.6 6.2v2.3H8V12h2.6v10H14V12h2.7l.4-3.5H14z"/></svg></a></li>
+                    <li><a href="#" data-social="instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7c-.1-1.6-.4-3-1.6-4.2S17.6 1.2 16 1.1C14.4 1 9.6 1 8 1.1 6.4 1.2 5 1.5 3.8 2.7S2.2 5.4 2.1 7C2 8.6 2 13.4 2.1 15c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.4.2-8zm-2.1 9.9a3.2 3.2 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.2 3.2 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.7s-.1-4.4.4-5.7A3.2 3.2 0 0 1 6.6 3.7c1.3-.5 4.3-.4 5.7-.4s4.4-.1 5.7.4a3.2 3.2 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.4-.4 5.7z"/></svg></a></li>
+                    <li><a href="#" data-social="tiktok" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.8 5.8 0 1 0 5 5.7V9.1a7.4 7.4 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.3-1.6z"/></svg></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span data-ano>2026</span> <span data-config="nomeEmpresa">Minha Empresa</span>. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

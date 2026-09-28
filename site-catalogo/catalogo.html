@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Empresa | Catálogo</title>
+    <meta name="description" content="Explore o nosso catálogo de produtos, serviços e promoções. Pesquise, filtre por categoria e peça pelo WhatsApp.">
+    <meta name="theme-color" content="#0A5548">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Página inicial">
+                <img src="images/logo.png" alt="" width="40" height="40">
+                <span data-config="nomeEmpresa">Minha Empresa</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+                    <li><a href="contato.html">Contacto</a></li>
+                </ul>
+                <a class="btn btn-primary btn-sm" href="catalogo.html">Ver Catálogo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="page-header" aria-labelledby="catalogo-titulo">
+            <div class="container">
+                <span class="eyebrow">Catálogo</span>
+                <h1 id="catalogo-titulo">Nosso Catálogo</h1>
+                <p>Explore os nossos produtos e serviços.</p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 24px;" aria-label="Lista de produtos">
+            <div class="container">
+                <div class="catalog-toolbar">
+                    <div class="search-box" role="search">
+                        <label class="visually-hidden" for="pesquisa">Procurar produto</label>
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.8l-.3-.3A6.5 6.5 0 1 0 9.5 16a6.5 6.5 0 0 0 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
+                        <input type="search" id="pesquisa" placeholder="Procurar produto..." autocomplete="off">
+                    </div>
+
+                    <!-- Os botões de filtro são gerados pelo js/script.js (CATEGORIAS) -->
+                    <div class="filters" id="filtros" role="group" aria-label="Filtrar por categoria"></div>
+                </div>
+
+                <p class="results-count" id="contador-resultados" aria-live="polite"></p>
+
+                <!-- Os cards são gerados automaticamente pelo js/script.js -->
+                <div class="products-grid" id="catalogo-grid"></div>
+
+                <div class="empty-state" id="sem-resultados" hidden>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.5 14h-.8l-.3-.3A6.5 6.5 0 1 0 9.5 16a6.5 6.5 0 0 0 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>
+                    <h2>Nenhum produto encontrado</h2>
+                    <p>Tente outro termo de pesquisa ou escolha outra categoria.</p>
+                    <button type="button" class="btn btn-outline" id="limpar-filtros">Limpar filtros</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="brand" href="index.html">
+                    <img src="images/logo.png" alt="" width="40" height="40">
+                    <span data-config="nomeEmpresa">Minha Empresa</span>
+                </a>
+                <p>Produtos e serviços de qualidade, com atendimento próximo e pedidos simples.</p>
+            </div>
+            <nav aria-label="Links rápidos">
+                <h2>Links rápidos</h2>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="catalogo.html?categoria=Promoções">Promoções</a></li>
+                    <li><a href="contato.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h2>Contactos</h2>
+                <ul>
+                    <li><a href="contato.html" data-whatsapp>WhatsApp</a></li>
+                    <li><a href="contato.html" data-tel><span data-config="telefone">+244 900 000 000</span></a></li>
+                    <li><a href="contato.html" data-email><span data-config="email">email@empresa.com</span></a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Redes sociais</h2>
+                <ul class="social-list">
+                    <li><a href="#" data-social="facebook" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.3C16.7 2.2 15.7 2 14.6 2 12.2 2 10.6 3.5 10.6 6.2v2.3H8V12h2.6v10H14V12h2.7l.4-3.5H14z"/></svg></a></li>
+                    <li><a href="#" data-social="instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7c-.1-1.6-.4-3-1.6-4.2S17.6 1.2 16 1.1C14.4 1 9.6 1 8 1.1 6.4 1.2 5 1.5 3.8 2.7S2.2 5.4 2.1 7C2 8.6 2 13.4 2.1 15c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.4.2-8zm-2.1 9.9a3.2 3.2 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.2 3.2 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.7s-.1-4.4.4-5.7A3.2 3.2 0 0 1 6.6 3.7c1.3-.5 4.3-.4 5.7-.4s4.4-.1 5.7.4a3.2 3.2 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.4-.4 5.7z"/></svg></a></li>
+                    <li><a href="#" data-social="tiktok" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.8 5.8 0 1 0 5 5.7V9.1a7.4 7.4 0 0 0 4.3 1.4V7.4a4.3 4.3 0 0 1-3.3-1.6z"/></svg></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; <span data-ano>2026</span> <span data-config="nomeEmpresa">Minha Empresa</span>. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
